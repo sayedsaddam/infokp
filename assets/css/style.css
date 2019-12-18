@@ -1,0 +1,619 @@
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'raleway';
+  src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+@font-face {
+  font-family: 'ralewayB';
+  src: url('../fonts/Raleway/Raleway-Bold.ttf');
+}
+@font-face {
+  font-family: 'openSans';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+body {
+  font-family: 'roboto';
+  background-color: #f1f3f5;
+}
+::selection {
+  background-color: #42324e;
+  color: #fff;
+}
+.marg {
+  margin: 0px !important;
+}
+.marg-top {
+  margin-top: 10px;
+}
+.marg-top-8 {
+  margin-top: 9px;
+}
+.marg-20 {
+  margin-top: 20px !important;
+}
+.pad {
+  padding: 0px !Important;
+}
+.mt-20 {
+  margin-top: 23px;
+}
+a {
+  text-decoration: none !important;
+  outline: none !important;
+}
+button {
+  outline: none !important;
+}
+.no-border {
+  border: 0px !important;
+}
+.heading-all {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.heading-all h3 {
+  font-size: 36px;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.heading-all h3:before {
+  content: "";
+  position: absolute;
+  padding: 2px;
+  left: 25%;
+  right: 25%;
+  background-color: #f64827;
+  bottom: -7px;
+}
+.heading-all img {
+  width: 23px;
+  display: none;
+}
+.anchor {
+  display: block;
+}
+.margint-top-0 {
+  margin-top: 0px !important;
+}
+.tabelHeading {
+  margin: 15px 0px;
+}
+.tabelHeading h3 {
+  margin: 0px;
+  padding: 0px 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #3a3b3c;
+  font-size: 20px;
+}
+.tabelHeading h3 span {
+  font-weight: lighter;
+}
+section.secnavMain {
+  position: relative;
+}
+section.secnavMain nav.navbar-inverse {
+  border-radius: 0px;
+  background-color: #3a3b3c;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+}
+section.secnavMain nav.navbar-inverse a.navbar-brand {
+  padding: 18px 15px;
+  margin-right: 35px;
+}
+section.secnavMain nav.navbar-inverse .navbar-nav li a {
+  color: #fff;
+  padding: 0px 0px;
+  margin: 15px 15px;
+}
+section.secnavMain nav.navbar-inverse .navbar-nav li a > span.dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+}
+section.secnavMain nav.navbar-inverse .navbar-nav li a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -35px;
+}
+section.secMainWidth {
+  padding: 0px 100px;
+}
+section.secMainWidth section.secIndex .headingMain {
+  margin: 30px 0px;
+}
+section.secMainWidth section.secIndex .headingMain h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px;
+}
+section.secMainWidth section.secIndex .headingMain h1 span {
+  font-weight: lighter;
+  font-size: 28px;
+}
+section.secMainWidth section.secIndex .mainGrid {
+  text-align: center;
+  min-height: 240px;
+  display: grid;
+  align-items: center;
+  border: 1px solid #e0e4e7;
+  border-radius: 3px;
+  margin: 15px 0px;
+  transition: 0.4s;
+  background: linear-gradient(0deg, #fff, #fff);
+  box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.01);
+}
+section.secMainWidth section.secIndex .mainGrid:hover {
+  background: linear-gradient(0deg, #395dff, #3ce0ff);
+}
+section.secMainWidth section.secIndex .mainGrid:hover .gridContent h3,
+section.secMainWidth section.secIndex .mainGrid:hover .gridContent p {
+  color: #fff;
+}
+section.secMainWidth section.secIndex .mainGrid:hover .gridIcon {
+  background-color: #fff;
+}
+section.secMainWidth section.secIndex .mainGrid .gridContent h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+section.secMainWidth section.secIndex .mainGrid .gridContent p {
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: capitalize;
+  color: #7d7e7e;
+}
+section.secMainWidth section.secIndex .mainGrid .gridIcon {
+  text-align: center;
+  display: inline-grid;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  align-items: center;
+}
+section.secMainWidth section.secIndex .mainGrid .gridIcon img {
+  margin: auto;
+}
+section.secMainWidth section.secIndex .mainGrid .icon1 {
+  background-color: #dfefff;
+}
+section.secMainWidth section.secIndex .mainGrid .icon2 {
+  background-color: #fef7dd;
+}
+section.secMainWidth section.secIndex .mainGrid .icon3 {
+  background-color: #fcecf4;
+}
+section.secMainWidth section.secIndex .mainGrid .icon4 {
+  background-color: #efedfe;
+}
+section.secMainWidth section.secIndex .mainGrid .icon5 {
+  background-color: #fce3e2;
+}
+section.secMainWidth .secIndexTable {
+  margin: 15px 0px;
+}
+section.secMainWidth .secIndexTable .mainTableWhite {
+  background-color: #fff;
+  border: 1px solid #e1e5e8;
+  border-radius: 3px;
+  box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.01);
+}
+section.secMainWidth .secIndexTable .tabelHeading {
+  margin: 15px 0px;
+}
+section.secMainWidth .secIndexTable .tabelHeading h3 {
+  margin: 0px;
+  padding: 0px 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #3a3b3c;
+  font-size: 20px;
+}
+section.secMainWidth .secIndexTable .tabelHeading h3 span {
+  font-weight: lighter;
+}
+section.secMainWidth .secIndexTable .tabelTopBtn {
+  text-align: right;
+  padding-right: 15px;
+  padding-top: 12px;
+}
+section.secMainWidth .secIndexTable .tabelTopBtn .btn {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #0088ff;
+  color: #0088ff;
+  transition: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+section.secMainWidth .secIndexTable .tabelTopBtn .btn:hover {
+  background-color: #0088ff;
+  color: #fff;
+}
+section.secMainWidth .secIndexTable .tabelTopBtn .btn:hover img {
+  filter: brightness(0) invert(1);
+}
+section.secMainWidth .secIndexTable .tabelTopBtn .btn img {
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+  transition: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+section.secMainWidth .secIndexTable .tableMain table {
+  margin-top: 10px;
+}
+section.secMainWidth .secIndexTable .tableMain table tr th {
+  text-transform: capitalize;
+  color: #3a3b3c;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+section.secMainWidth .secIndexTable .tableMain table tr td {
+  border-bottom: 1px solid #ddd;
+  border-top: 0px solid #ddd;
+  color: #818181;
+  padding: 10px 10px;
+  font-size: 13px;
+}
+section.secMainWidth .secIndexTable .tableMain table tr .action a img {
+  width: 12px;
+}
+section.secMainWidth .secIndexTable .tableMain table tr .action a:nth-child(1) {
+  border-right: 1px solid #ddd;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+section.secMainWidth .secIndexTable .tabelSideListing {
+  padding: 10px 10px;
+  margin: 15px 0px;
+  color: #787878;
+}
+section.secMainWidth .secIndexTable .tabelSideListing span {
+  position: relative;
+  color: #454545;
+}
+section.secMainWidth .secIndexTable .tabelSideListing img {
+  position: relative;
+  margin: 0px 3px;
+}
+section.secMainWidth .secIndexTable .tabelSideListing img:hover {
+  filter: brightness(0) invert(0.1);
+}
+section.secMainWidth .secIndexTable .tabelCenterListing {
+  text-align: center;
+  margin: 15px 0px;
+}
+section.secMainWidth .secIndexTable .tabelCenterListing a.arrowIcons {
+  position: relative;
+  top: 1px;
+}
+section.secMainWidth .secIndexTable .tabelCenterListing a {
+  color: #757575;
+  border: 1px solid #ddd;
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  border-radius: 3px;
+}
+section.secMainWidth .secIndexTable .tabelCenterListing a img {
+  margin: auto;
+}
+section.secMainWidth .secIndexTable .tabelCenterListing a:hover {
+  border-color: #0088ff;
+  color: #0088ff;
+}
+section.secLogin .loginWhite {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  min-height: 591px;
+  margin-top: 60px;
+}
+section.secLogin .mainLeftImg {
+  background-color: #1f87ff;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+section.secLogin .mainLeftImg > img {
+  margin-bottom: 20px;
+}
+section.secLogin .mainLeftImg p {
+  font-size: 13px;
+  width: 80%;
+  margin: 20px auto 50px auto;
+}
+section.secLogin .mainLeftImg .loginLogo {
+  text-align: left;
+  margin-bottom: 20px;
+}
+section.secLogin .rightLoginMain {
+  min-height: 591px;
+  display: grid;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+section.secLogin .rightLoginMain h3 {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+section.secLogin .rightLoginMain .loginInput {
+  margin: 15px 0px;
+  text-align: center;
+}
+section.secLogin .rightLoginMain .loginInput .form-control {
+  min-height: 47px;
+  box-shadow: 0 0 0 0;
+  border-color: #e1e4e7;
+  border-radius: 3px;
+}
+section.secLogin .rightLoginMain .loginInput .btn {
+  background-color: #1f87ff;
+  color: #fff;
+  padding: 10px 0px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+section.secLogin .rightLoginMain .loginInput a {
+  margin-top: 15px;
+  color: #333;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+}
+section.secFormLayout {
+  position: relative;
+}
+section.secFormLayout .mainInputBg {
+  background-color: #fff;
+  margin-top: 50px;
+  border: 1px solid #e1e4e7;
+  padding: 20px;
+  border-radius: 5px;
+}
+section.secFormLayout .mainInputBg .tabelHeading {
+  margin-top: 0px;
+}
+section.secFormLayout .mainInputBg .tabelHeading h3 {
+  padding-left: 0px;
+}
+section.secFormLayout .mainInputBg .inputFormMain {
+  margin-bottom: 20px;
+}
+section.secFormLayout .mainInputBg .inputFormMain .form-control {
+  border-color: #e1e4e7;
+  box-shadow: 0 0 0 0;
+  min-height: 45px;
+  background-color: #f6f7f8;
+  border-radius: 3px;
+}
+section.secFormLayout .mainInputBg .submitBtn .btnSubmit {
+  background-color: #3e8df7;
+  padding: 10px 90px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 0;
+  border: 0px;
+  color: #fff;
+}
+section.secFormLayout .mainInputBg .solidLine {
+  border-top: 1px solid #e1e4e7;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+section.secMainWidthFilter .no-leftPad {
+  padding: 0px;
+}
+section.secMainWidthFilter .topNavFilter {
+  text-align: right;
+  margin-top: 40px;
+}
+section.secMainWidthFilter .topNavFilter button:nth-child(1) {
+  padding-right: 30px;
+}
+section.secMainWidthFilter .topNavFilter button:nth-child(1) span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform: rotate(-46deg);
+  width: 8px;
+  height: 8px;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+section.secMainWidthFilter .topNavFilter button {
+  color: #000;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e1e4e7;
+}
+section.secMainWidthFilter .topNavFilter button img {
+  width: 19px;
+  height: 20px;
+}
+section.secMainWidthFilter .main-leftFilter {
+  padding-top: 20px;
+  position: relative;
+  height: 700px;
+  background-color: #fff;
+  overflow: hidden;
+  border-right: 1px solid #e1e4e7;
+}
+section.secMainWidthFilter .main-leftFilter .tabelHeading h3 {
+  font-size: 18px;
+  position: relative;
+}
+section.secMainWidthFilter .main-leftFilter .tabelHeading h3 a {
+  position: absolute;
+  right: 15px;
+  top: 2px;
+  color: #3e8df7;
+}
+section.secMainWidthFilter .main-leftFilter .selectBoxMain {
+  padding: 15px;
+}
+section.secMainWidthFilter .main-leftFilter .selectBoxMain .filterSelect {
+  margin-bottom: 10px;
+  position: relative;
+}
+section.secMainWidthFilter .main-leftFilter .selectBoxMain .filterSelect .form-control {
+  position: relative;
+  z-index: 2;
+  min-height: 45px;
+  border-color: #e1e4e7;
+  border-radius: 3px;
+  box-shadow: 0 0 0 0;
+  color: #aeafaf;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+section.secMainWidthFilter .main-leftFilter .selectBoxMain .filterSelect span {
+  position: absolute;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 4px;
+  top: 14px;
+  z-index: 1;
+  right: 15px;
+  transform: rotate(46deg);
+}
+section.secMainWidthFilter .main-leftFilter .selectBoxMain .filterSelectBtn button {
+  display: block;
+  width: 100%;
+  background-color: #3e8df7;
+  padding: 10px;
+  color: #fff;
+  text-transform: capitalize;
+}
+section.secMainWidthFilter .mainTableWhite {
+  background-color: #fff;
+  border: 1px solid #e1e5e8;
+  border-radius: 3px;
+  margin-top: 18px;
+  box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.01);
+}
+section.secMainWidthFilter .mainTableWhite .tabelHeading {
+  margin: 15px 0px;
+}
+section.secMainWidthFilter .mainTableWhite .tabelHeading h3 {
+  margin: 0px;
+  padding: 0px 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #3a3b3c;
+  font-size: 20px;
+}
+section.secMainWidthFilter .mainTableWhite .tabelHeading h3 span {
+  font-weight: lighter;
+}
+section.secMainWidthFilter .mainTableWhite .tabelTopBtn {
+  text-align: right;
+  padding-right: 15px;
+  padding-top: 12px;
+}
+section.secMainWidthFilter .mainTableWhite .tabelTopBtn .btn {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #0088ff;
+  color: #0088ff;
+  transition: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+section.secMainWidthFilter .mainTableWhite .tabelTopBtn .btn:hover {
+  background-color: #0088ff;
+  color: #fff;
+}
+section.secMainWidthFilter .mainTableWhite .tabelTopBtn .btn:hover img {
+  filter: brightness(0) invert(1);
+}
+section.secMainWidthFilter .mainTableWhite .tabelTopBtn .btn img {
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+  transition: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+section.secMainWidthFilter .mainTableWhite .tableMain table {
+  margin-top: 10px;
+}
+section.secMainWidthFilter .mainTableWhite .tableMain table tr th {
+  text-transform: capitalize;
+  color: #3a3b3c;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+section.secMainWidthFilter .mainTableWhite .tableMain table tr td {
+  border-bottom: 1px solid #ddd;
+  border-top: 0px solid #ddd;
+  color: #818181;
+  padding: 10px 10px;
+  font-size: 13px;
+}
+section.secMainWidthFilter .mainTableWhite .tableMain table tr .action a img {
+  width: 12px;
+}
+section.secMainWidthFilter .mainTableWhite .tableMain table tr .action a:nth-child(1) {
+  border-right: 1px solid #ddd;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+section.secMainWidthFilter .mainTableWhite .tabelSideListing {
+  padding: 10px 10px;
+  margin: 15px 0px;
+  color: #787878;
+}
+section.secMainWidthFilter .mainTableWhite .tabelSideListing span {
+  position: relative;
+  color: #454545;
+}
+section.secMainWidthFilter .mainTableWhite .tabelSideListing img {
+  position: relative;
+  margin: 0px 3px;
+}
+section.secMainWidthFilter .mainTableWhite .tabelSideListing img:hover {
+  filter: brightness(0) invert(0.1);
+}
+section.secMainWidthFilter .mainTableWhite .tabelCenterListing {
+  text-align: center;
+  margin: 15px 0px;
+}
+section.secMainWidthFilter .mainTableWhite .tabelCenterListing a.arrowIcons {
+  position: relative;
+  top: 1px;
+}
+section.secMainWidthFilter .mainTableWhite .tabelCenterListing a {
+  color: #757575;
+  border: 1px solid #ddd;
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  border-radius: 3px;
+}
+section.secMainWidthFilter .mainTableWhite .tabelCenterListing a img {
+  margin: auto;
+}
+section.secMainWidthFilter .mainTableWhite .tabelCenterListing a:hover {
+  border-color: #0088ff;
+  color: #0088ff;
+}
+/*# sourceMappingURL=style.css.map */
