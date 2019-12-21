@@ -15,7 +15,7 @@ class Home extends CI_Controller
     // Index method will load the page.
     public function index($offset = NULL)
     {
-    	$limit = 10;
+    	$limit = 20;
     	if(!empty($offset)){
     		$this->uri->segment(3);
     	}
@@ -67,6 +67,7 @@ class Home extends CI_Controller
     				'asset_code' => $this->input->post('asset_code'),
     				'serial_number' => $this->input->post('serial_no'),
     				'custodian_location' => $this->input->post('custodian'),
+                    'designation' => $this->input->post('designation'),
     				'department' => $this->input->post('department'),
     				'quantity' => $this->input->post('quantity'),
     				'district_region' => $this->input->post('district'),
@@ -103,6 +104,7 @@ class Home extends CI_Controller
     				'asset_code' => $this->input->post('asset_code'),
     				'serial_number' => $this->input->post('serial_no'),
     				'custodian_location' => $this->input->post('custodian'),
+                    'designation' => $this->input->post('designation'),
     				'department' => $this->input->post('department'),
     				'quantity' => $this->input->post('quantity'),
     				'district_region' => $this->input->post('district'),

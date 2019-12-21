@@ -55,6 +55,8 @@
                 <input type="text" name="serial_no" class="form-control" placeholder="Serial Number" value="<?php if(!empty($edit)){ echo $edit->serial_number; } ?>">
                 <label>Custodian</label>
                 <input type="text" name="custodian" class="form-control" placeholder="Custodian" value="<?php if(!empty($edit)){ echo $edit->custodian_location; } ?>">
+                <label>Designation</label>
+                <input type="text" name="designation" class="form-control" placeholder="Designation" value="<?php if(!empty($edit)){ echo $edit->designation; } ?>">
                 <label>Department</label>
                 <input type="text" name="department" class="form-control" placeholder="Department" value="<?php if(!empty($edit)){ echo $edit->department; } ?>">
                 <label>Quantity</label>

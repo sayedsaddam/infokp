@@ -48,14 +48,15 @@
                   <thead>
                     <tr>
                       <th>s. no</th>
-                      <th>year</th>
-                      <th>project</th>
-                      <th>category</th>
                       <th>item</th>
-                      <th>serial number</th>
-                      <th>custodian / location</th>
+                      <th>description</th>
+                      <th>receiving date</th>
+                      <th>purchasing date</th>
+                      <th>laptop age</th>
+                      <th>custodianship</th>
+                      <th>designation</th>
                       <th>department</th>
-                      <th>district / region</th>
+                      <th>distt/region</th>
                       <th>action</th>
                     </tr>
                   </thead>
@@ -64,12 +65,18 @@
                     <?php if(!empty($items)): $counter = $this->uri->segment(3) + 1; foreach ($items as $item): ?>
                       <tr>
                         <td><?php echo $counter++; ?></td>
-                        <td><?php echo $item->year; ?></td>
-                        <td><?php echo $item->project; ?></td>
-                        <td><?php echo $item->category; ?></td>
                         <td><?php echo $item->item; ?></td>
-                        <td><?php echo $item->serial_number; ?></td>
+                        <td><?php echo $item->description; ?></td>
+                        <td><?php echo date('M d, Y', strtotime($item->receive_date)); ?></td>
+                        <td><?php echo date('M d, Y', strtotime($item->purchase_date)); ?></td>
+                        <td>
+                          <?php $recDate = date('Y-m-d', strtotime($item->purchase_date));
+                                $today = date("Y-m-d"); // Today's date
+                                $diff = date_diff(date_create($recDate), date_create($today));
+                                echo $diff->format('%yyr %mm %dd'); ?>
+                        </td>
                         <td><?php echo $item->custodian_location; ?></td>
+                        <td><?php echo $item->designation; ?></td>
                         <td><?php echo $item->department; ?></td>
                         <td><?php echo $item->district_region; ?></td>
                         <td>
@@ -89,6 +96,7 @@
                                 </div>
                                 <!--Body-->
                                 <div class="modal-body">
+                                  <strong>Project : <?php echo $item_detail->project; ?></strong><hr>
                                   <div class="row">
                                     <div class="col-md-2">
                                       <strong>Description</strong>
@@ -133,16 +141,16 @@
                                   </div>
                                   <div class="row">
                                     <div class="col-md-2">
-                                      <strong>Purchasing Date</strong>
+                                      <strong>Model</strong>
                                     </div>
                                     <div class="col-md-4">
-                                      <?php echo date('M d, Y', strtotime($item_detail->purchase_date)); ?>
+                                      <?php echo $item_detail->model; ?>
                                     </div>
                                     <div class="col-md-2">
-                                      <strong>Receiving Date</strong>
+                                      <strong>Serial Number</strong>
                                     </div>
                                     <div class="col-md-4">
-                                      <?php echo date('M d, Y', strtotime($item_detail->receive_date)); ?>
+                                      <?php echo $item_detail->serial_number; ?>
                                     </div>
                                   </div>
                                 </div>
@@ -162,12 +170,18 @@
                     <?php $counter = 1; foreach ($search_results as $result): ?>
                       <tr>
                         <td><?php echo $counter++; ?></td>
-                        <td><?php echo $result->year; ?></td>
-                        <td><?php echo $result->project; ?></td>
-                        <td><?php echo $result->category; ?></td>
                         <td><?php echo $result->item; ?></td>
-                        <td><?php echo $result->serial_number; ?></td>
+                        <td><?php echo $result->description; ?></td>
+                        <td><?php echo date('M d, Y', strtotime($result->receive_date)); ?></td>
+                        <td><?php echo date('M d, Y', strtotime($result->purchase_date)); ?></td>
+                        <td>
+                          <?php $recDate = date('Y-m-d', strtotime($result->purchase_date));
+                                $today = date("Y-m-d"); // Today's date
+                                $diff = date_diff(date_create($recDate), date_create($today));
+                                echo $diff->format('%yyr %mm %dd'); ?>
+                        </td>
                         <td><?php echo $result->custodian_location; ?></td>
+                        <td><?php echo $result->designation; ?></td>
                         <td><?php echo $result->department; ?></td>
                         <td><?php echo $result->district_region; ?></td>
                         <td>
