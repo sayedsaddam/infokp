@@ -25,7 +25,8 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="<?php echo base_url('home/dashboard'); ?>">Home</a></li>
-      <li><a href="<?php echo base_url('home'); ?>">Items List</a></li>
+      <li><a href="<?php echo base_url('home'); ?>">Items List (all items)</a></li>
+      <li><a href="<?php echo base_url('home/laptops'); ?>">Items List (laptops)</a></li>
       <li><a href="<?php echo base_url('home/add_items'); ?>">Add Items</a></li>
       <li><a href="<?php echo base_url('home/users_list'); ?>">Users</a></li>
     </ul>

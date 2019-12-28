@@ -73,6 +73,7 @@ class Home extends CI_Controller
     				'district_region' => $this->input->post('district'),
     				'status' => $this->input->post('status'),
                     'po_no' => $this->input->post('po_no'),
+                    'contact' => $this->input->post('contact'),
                     'purchase_date' => $this->input->post('purchase_date'),
                     'receive_date' => $this->input->post('receive_date'),
     				'created_at' => date('Y-m-d')
@@ -110,6 +111,7 @@ class Home extends CI_Controller
     				'district_region' => $this->input->post('district'),
     				'status' => $this->input->post('status'),
                     'po_no' => $this->input->post('po_no'),
+                    'contact' => $this->input->post('contact'),
                     'purchase_date' => $this->input->post('purchase_date'),
                     'receive_date' => $this->input->post('receive_date'),
     				'created_at' => date('Y-m-d')
@@ -143,6 +145,57 @@ class Home extends CI_Controller
     	$data['title'] = 'Dashboard | Inventory Management';
     	$data['content'] = 'dashboard';
     	$this->load->view('components/template', $data);
+    }
+    // All laptops list.
+    public function laptops($offset = NULL){
+        $limit = 20;
+        if(!empty($offset)){
+            $this->uri->segment(3);
+        }
+        $this->load->library('pagination');
+        $config['uri_segment'] = 3;
+        $config['base_url'] = base_url('home/laptops');
+        $config['total_rows'] = $this->Home_model->count_laptops();
+        $config['per_page'] = $limit;
+        $config['num_links'] = 3;
+        $config["full_tag_open"] = '<ul class="pagination">';
+        $config["full_tag_close"] = '</ul>';
+        $config["first_tag_open"] = '<li>';
+        $config["first_tag_close"] = '</li>';
+        $config["last_tag_open"] = '<li>';
+        $config["last_tag_close"] = '</li>';
+        $config['next_link'] = 'next &raquo;';
+        $config["next_tag_open"] = '<li>';
+        $config["next_tag_close"] = '</li>';
+        $config["prev_link"] = "prev &laquo;";
+        $config["prev_tag_open"] = "<li>";
+        $config["prev_tag_close"] = "</li>";
+        $config["cur_tag_open"] = "<li class='active'><a href='javascript:void(0);'>";
+        $config["cur_tag_close"] = "</a></li>";
+        $config["num_tag_open"] = "<li>";
+        $config["num_tag_close"] = "</li>";
+        $this->pagination->initialize($config);
+        $data['laptops'] = $this->Home_model->get_laptops($limit, $offset);
+        $data['title'] = 'Laptops List | Inventory Management';
+        $data['content'] = 'laptops_list';
+        $this->load->view('components/template', $data);
+    }
+    // Export CSV (All items).
+    public function export_items() {
+        $filename = 'Items_'.date('M Y').'.csv';
+        header("Content-Description: File Transfer");
+        header("Content-Disposition: attachment; filename=$filename");
+        header("Content-Type: application/csv; ");
+        $items = $this->Trainings_model->items_report();
+        $file = fopen('php://output', 'w');
+        $header = array("Trg Type","Location","Trainers","Facilitator","Started On","Ended On","Venue","Hall Detail","Sessions","Approval Type","Announcement","Number of Trainees");
+        fputcsv($file, $header);
+        foreach ($items as $key=>$trg){
+            $trainers = $trg['first_name'].' '.$trg['last_name'].', '.$trg['trainer_two']; // Trainers
+            fputcsv($file, array($trg['type'], $trg['prov_name'], $trainers, $trg['facilitator_name'], $trg['start_date'], $trg['end_date'], $trg['location'], $trg['hall_detail'], $trg['session'], $trg['approval_type'], $trg['created_at'], $trg['trainees']));
+        }
+        fclose($file);
+        exit;
     }
 }
 
