@@ -8,9 +8,10 @@
             <div class="tabelHeading">
               <h3>
                 <?php if(empty($search_results)): ?>
-                  list of items (Laptops) | <a href="javascript:history.go(-1);" class="btn btn-primary btn-xs">
+                  list of items (Computers) | <a href="javascript:history.go(-1);" class="btn btn-primary btn-xs">
                     <i class="fa fa-angle-double-left"></i> Back</a>
                     <a href="<?php echo base_url('home/add_items'); ?>" class="btn btn-success btn-xs"><i class="fa fa-plus"></i> Add New</a>
+                    <a href="<?php echo base_url('home/export_items'); ?>" class="btn btn-info btn-xs">Export</a>
                 <?php elseif(!empty($search_results)): ?>
                   search results | <a href="javascript:history.go(-1);" class="btn btn-primary btn-xs">
                     <i class="fa fa-angle-double-left"></i> Back</a>

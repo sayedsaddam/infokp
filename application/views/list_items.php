@@ -11,6 +11,7 @@
                   list of items (all items) | <a href="javascript:history.go(-1);" class="btn btn-primary btn-xs">
                     <i class="fa fa-angle-double-left"></i> Back</a>
                     <a href="<?php echo base_url('home/add_items'); ?>" class="btn btn-success btn-xs"><i class="fa fa-plus"></i> Add New</a>
+                    <a href="<?php echo base_url('home/export_all_items'); ?>" class="btn btn-info btn-xs">Export</a>
                 <?php elseif(!empty($search_results)): ?>
                   search results | <a href="javascript:history.go(-1);" class="btn btn-primary btn-xs">
                     <i class="fa fa-angle-double-left"></i> Back</a>
@@ -49,12 +50,9 @@
                     <tr>
                       <th>s. no</th>
                       <th>item</th>
+                      <th>project</th>
+                      <th>status</th>
                       <th>description</th>
-                      <th>receiving date</th>
-                      <th>purchasing date</th>
-                      <th>custodianship</th>
-                      <th>contact</th>
-                      <th>designation</th>
                       <th>department</th>
                       <th>distt/region</th>
                       <th>action</th>
@@ -66,12 +64,9 @@
                       <tr>
                         <td><?php echo $counter++; ?></td>
                         <td><?php echo $item->item; ?></td>
+                        <td><?php echo $item->project; ?></td>
+                        <td><?php echo $item->status; ?></td>
                         <td><?php echo $item->description; ?></td>
-                        <td><?php echo date('M d, Y', strtotime($item->receive_date)); ?></td>
-                        <td><?php echo date('M d, Y', strtotime($item->purchase_date)); ?></td>
-                        <td><?php echo $item->custodian_location; ?></td>
-                        <td><?php echo $item->contact; ?></td>
-                        <td><?php echo $item->designation; ?></td>
                         <td><?php echo $item->department; ?></td>
                         <td><?php echo $item->district_region; ?></td>
                         <td>
@@ -166,12 +161,9 @@
                       <tr>
                         <td><?php echo $counter++; ?></td>
                         <td><?php echo $result->item; ?></td>
+                        <td><?php echo $result->project; ?></td>
+                        <td><?php echo $result->status; ?></td>
                         <td><?php echo $result->description; ?></td>
-                        <td><?php echo date('M d, Y', strtotime($result->receive_date)); ?></td>
-                        <td><?php echo date('M d, Y', strtotime($result->purchase_date)); ?></td>
-                        <td><?php echo $result->custodian_location; ?></td>
-                        <td><?php echo $result->contact; ?></td>
-                        <td><?php echo $result->designation; ?></td>
                         <td><?php echo $result->department; ?></td>
                         <td><?php echo $result->district_region; ?></td>
                         <td>

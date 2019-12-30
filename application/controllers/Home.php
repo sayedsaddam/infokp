@@ -180,19 +180,34 @@ class Home extends CI_Controller
         $data['content'] = 'laptops_list';
         $this->load->view('components/template', $data);
     }
-    // Export CSV (All items).
-    public function export_items() {
+    // Export CSV (Computers).
+    public function export_items(){
         $filename = 'Items_'.date('M Y').'.csv';
         header("Content-Description: File Transfer");
         header("Content-Disposition: attachment; filename=$filename");
         header("Content-Type: application/csv; ");
-        $items = $this->Trainings_model->items_report();
+        $items = $this->Home_model->items_report();
         $file = fopen('php://output', 'w');
-        $header = array("Trg Type","Location","Trainers","Facilitator","Started On","Ended On","Venue","Hall Detail","Sessions","Approval Type","Announcement","Number of Trainees");
+        $header = array("Project","Category","Item","Description","Model","Asset Code","Serial No.","Custodianship","Contact","Designation","Department","Quantity","District","Status","PO No.","Purchasing Date","Receiving Date");
         fputcsv($file, $header);
-        foreach ($items as $key=>$trg){
-            $trainers = $trg['first_name'].' '.$trg['last_name'].', '.$trg['trainer_two']; // Trainers
-            fputcsv($file, array($trg['type'], $trg['prov_name'], $trainers, $trg['facilitator_name'], $trg['start_date'], $trg['end_date'], $trg['location'], $trg['hall_detail'], $trg['session'], $trg['approval_type'], $trg['created_at'], $trg['trainees']));
+        foreach ($items as $key=>$item){
+            fputcsv($file, array($item['project'], $item['category'], $item['item'], $item['description'], $item['model'], $item['asset_code'], $item['serial_number'], $item['custodian_location'], $item['contact'], $item['designation'], $item['department'], $item['quantity'], $item['district_region'], $item['status'], $item['po_no'], $item['purchase_date'], $item['receive_date']));
+        }
+        fclose($file);
+        exit;
+    }
+    // Export CSV (All items).
+    public function export_all_items(){
+        $filename = 'Items_'.date('M Y').'.csv';
+        header("Content-Description: File Transfer");
+        header("Content-Disposition: attachment; filename=$filename");
+        header("Content-Type: application/csv; ");
+        $items = $this->Home_model->all_items_report();
+        $file = fopen('php://output', 'w');
+        $header = array("Project","Category","Item","Description","Model","Asset Code","Serial No.","Custodianship","Contact","Designation","Department","Quantity","District","Status","PO No.");
+        fputcsv($file, $header);
+        foreach ($items as $key=>$item){
+            fputcsv($file, array($item['project'], $item['category'], $item['item'], $item['description'], $item['model'], $item['asset_code'], $item['serial_number'], $item['custodian_location'], $item['contact'], $item['designation'], $item['department'], $item['quantity'], $item['district_region'], $item['status'], $item['po_no']));
         }
         fclose($file);
         exit;

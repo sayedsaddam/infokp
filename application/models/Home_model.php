@@ -20,13 +20,13 @@ class Home_model extends CI_Model{
     }
     // Count all items for pagination.
     public function count_items(){
-        return $this->db->from('items_detail')->where_not_in('item', 'Laptop')->count_all_results();
+        return $this->db->from('items_detail')->where_not_in('category', 'Computers')->count_all_results();
     }
     // Get data from database. other than Laptops.
     public function get_items($limit, $offset){
     	$this->db->select('*');
     	$this->db->from('items_detail');
-        $this->db->where_not_in('item', 'Laptop');
+        $this->db->where_not_in('category', 'Computers');
         $this->db->limit($limit, $offset);
     	return $this->db->get()->result();
     }
@@ -76,19 +76,29 @@ class Home_model extends CI_Model{
     }
     // count items (Laptops).
     public function count_laptops(){
-        return $this->db->from('items_detail')->where('item', 'Laptop')->count_all_results();
+        return $this->db->from('items_detail')->where('category', 'Computers')->count_all_results();
     }
     // Get all laptops.
     public function get_laptops($limit, $offset){
         $this->db->select('*');
         $this->db->from('items_detail');
-        $this->db->where('item', 'Laptop');
+        $this->db->where('category', 'Computers');
         $this->db->limit($limit, $offset);
         return $this->db->get()->result();
     }
-    // Get all items report.
+    // Export items (category = Computers)
     public function items_report(){
-        return $this->db->get('items_detail')->result();
+        $this->db->select('*');
+        $this->db->from('items_detail');
+        $this->db->where('category', 'Computers');
+        return $this->db->get()->result_array();
+    }
+    // Export items (category = All Other Items)
+    public function all_items_report(){
+        $this->db->select('*');
+        $this->db->from('items_detail');
+        $this->db->where_not_in('category', 'Computers');
+        return $this->db->get()->result_array();
     }
     // ---------------------------- Dashboard statistics ---------------------------------- //
     // Count results for Computers.
