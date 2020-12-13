@@ -30,7 +30,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark default-color fixed-top scrolling-navbar">
             <div class="container">
-                <a class="navbar-brand" href="#">S2S Marketing</a>
+                <a class="navbar-brand" href="#">InfoKP Solutions</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto smooth-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" href="#intro">Home
+                            <a class="nav-link" href="<?= base_url(); ?>">Home
                             </a>
                         </li>
                         <li class="nav-item">
@@ -90,11 +90,11 @@
                     <div class="row wow fadeIn">
                         <!--Grid column-->
                         <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
-                            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">S2S Marketing</h3>
+                            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">InfoKP Solutions</h3>
                             <hr class="hr-light my-4 w-75">
-                            <h4 class="subtext-header mt-2 mb-4">We're a design and marketing company, providing different services including sales, media, digital marketing and branding.</h4>
-                            <a href="https://www.s2smark.com" class="btn btn-rounded btn-outline-white">
-                                <i class="fa fa-home"></i> Visit us
+                            <h4 class="subtext-header mt-2 mb-4">A leading software and web applications providers.</h4>
+                            <a href="#contact" class="btn btn-rounded btn-outline-white">
+                                <i class="fa fa-home"></i> Reach Out to Us
                             </a>
                         </div>
                         <!--Grid column-->

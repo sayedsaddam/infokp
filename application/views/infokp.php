@@ -83,7 +83,7 @@ header,
                 <div class="row">
                     <!-- Grid column -->
                     <div class="col-lg-5 text-center text-lg-left">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image">
+                        <img class="img-fluid animated flip" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image">
                     </div>
                     <!-- Grid column -->
 
@@ -185,7 +185,7 @@ header,
                     <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
                         <!--Featured image-->
                         <div class="view overlay rounded z-depth-1">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" class="img-fluid" alt="Sample project image">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" class="img-fluid animated zoomIn" alt="Sample project image">
                             <a>
                                 <div class="mask rgba-white-slight"></div>
                             </a>
@@ -251,7 +251,7 @@ header,
         <!--Section: projects-->
         <section class="text-center py-5">
             <div class="container">
-            <h2 class="h1-responsive font-weight-bold mb-5">Projects</h2>
+            <h2 class="h1-responsive font-weight-bold mb-5">Who we are ?</h2>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 mb-4">
                         <div class="jumbotron card card-image mt-4 mb-0 hoverable" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
@@ -274,7 +274,7 @@ header,
         <!--Section: Cascading panels -->
         <section class="text-center py-5">
             <div class="container">
-                <h2 class="h1-responsive font-weight-bold mb-5">Card Groups</h2>
+                <h2 class="h1-responsive font-weight-bold mb-5">Our Team</h2>
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                        <!-- Card group -->
@@ -368,8 +368,8 @@ header,
                             <!-- Content -->
                                 <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
                                     <div>
-                                    <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Marketing</h5>
-                                    <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
+                                    <h5 class="pink-text"><i class="fas fa-globe"></i> Web Apps</h5>
+                                    <h3 class="card-title pt-2"><strong>Web Applications</strong></h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
                                         optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
                                         Odit sed qui, dolorum!.</p>
@@ -386,12 +386,12 @@ header,
                             <!-- Content -->
                                 <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
                                     <div>
-                                    <h5 class="pink-text"><i class="fas fa-desktop"></i> Software</h5>
-                                    <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
+                                    <h5 class="orange-text"><i class="fas fa-desktop"></i> Software</h5>
+                                    <h3 class="card-title pt-2"><strong>Management Systems</strong></h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
                                         optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
                                         Odit sed qui, dolorum!.</p>
-                                    <a class="btn btn-deep-orange"><i class="fas fa-clone left"></i> View project</a>
+                                    <a class="btn btn-orange"><i class="fas fa-clone left"></i> View project</a>
                                     </div>
                                 </div>
                             </div>
@@ -744,7 +744,7 @@ header,
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
                     <!-- Card -->
-                    <div class="card gradient-card hoverable">
+                    <div class="card gradient-card shadow">
 
                         <div class="card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg)">
 
@@ -870,7 +870,7 @@ header,
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
                     <!-- Card -->
-                    <div class="card gradient-card rounded hoverable">
+                    <div class="card gradient-card rounded shadow">
                         <div class="card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
                             <!-- Content -->
                             <a href="#!">
@@ -961,7 +961,7 @@ header,
                     <div class="col-lg-4 col-md-6 mb-4">
 
                         <!-- Card Narrower -->
-                        <div class="card card-cascade hoverable overlay">
+                        <div class="card card-cascade shadow overlay">
 
                             <!-- Card image -->
                             <div class="view view-cascade shadow">

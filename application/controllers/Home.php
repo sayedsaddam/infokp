@@ -8,12 +8,11 @@ class Home extends CI_Controller{
         parent::__construct();    
     }
     public function index(){
-        // $data['title'] = 'Home';
-        $this->load->view('homepage');
-    }
-    public function mdb_template(){
-        $data['title'] = 'MDB Home';
+        $data['title'] = 'Home | InfoKP Solutions';
         $data['content'] = 'infokp';
         $this->load->view('components/template', $data);
+    }
+    public function home_page(){
+        $this->load->view('homepage');
     }
 }
