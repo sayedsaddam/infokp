@@ -11,4 +11,9 @@ class Home extends CI_Controller{
         // $data['title'] = 'Home';
         $this->load->view('homepage');
     }
+    public function mdb_template(){
+        $data['title'] = 'MDB Home';
+        $data['content'] = 'mdb-home';
+        $this->load->view('components/template', $data);
+    }
 }
