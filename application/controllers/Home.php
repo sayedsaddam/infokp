@@ -13,7 +13,7 @@ class Home extends CI_Controller{
     }
     public function mdb_template(){
         $data['title'] = 'MDB Home';
-        $data['content'] = 'mdb-home';
+        $data['content'] = 'infokp';
         $this->load->view('components/template', $data);
     }
 }
