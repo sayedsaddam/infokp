@@ -82,8 +82,8 @@ header,
                 <!-- Grid row -->
                 <div class="row">
                     <!-- Grid column -->
-                    <div class="col-lg-5 text-center text-lg-left">
-                        <img class="img-fluid animated flip" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image">
+                    <div class="col-lg-5 text-center text-lg-left view overlay zoom">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image">
                     </div>
                     <!-- Grid column -->
 
@@ -185,7 +185,7 @@ header,
                     <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
                         <!--Featured image-->
                         <div class="view overlay rounded z-depth-1">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" class="img-fluid animated zoomIn" alt="Sample project image">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" class="img-fluid" alt="Sample project image">
                             <a>
                                 <div class="mask rgba-white-slight"></div>
                             </a>
@@ -249,27 +249,38 @@ header,
 
         </section>
         <!--Section: projects-->
-        <section class="text-center py-5">
-            <div class="container">
-            <h2 class="h1-responsive font-weight-bold mb-5">Who we are ?</h2>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 mb-4">
-                        <div class="jumbotron card card-image mt-4 mb-0 hoverable" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
-                            <div class="text-white text-center py-5 px-4">
-                                <div>
-                                    <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Create your beautiful website with MDBootstrap</strong></h2>
-                                    <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-                                        optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!
-                                    </p>
-                                    <a class="btn blue-gradient btn-rounded"><i class="fas fa-clone left"></i> Browse Projects</a>
-                                    <a href="" class="btn aqua-gradient btn-rounded" data-toggle="modal" data-target="#elegantModalForm">Sign In</a>
-                                </div>
-                            </div>
+        <div class="container my-5 py-5 z-depth-1">
+            <!--Section: Content-->
+            <section class="dark-grey-text text-center">
+                
+                <h3 class="font-weight-bold pt-4 mb-4">Who We Are</h3>
+                
+                <h5 class="font-italic mb-5">...we are InfoKP, a Khyber Pakhtunkhwa based Software solutions providers.</h5>
+
+                <div class="row mx-lg-5 mx-md-3">
+                    <div class="col-md-6 mb-4">
+                        
+                        <div class="view mb-5">
+                            <img src="https://mdbootstrap.com/img/illustrations/undraw_grand_slam_0q5r.svg" class="img-fluid" alt="smaple image">
                         </div>
+
+                        <h5 class="font-weight-normal text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h5>
+
+                        </div>
+                        <div class="col-md-6 mb-4">
+                        
+                        <div class="view mb-5">
+                            <img src="https://mdbootstrap.com/img/illustrations/undraw_basketball_agx4.png" class="img-fluid" alt="smaple image">
+                        </div>
+
+                        <h5 class="font-weight-normal text-muted">Ut enim ad minim veniam, quis nostrud ut aliquip ex ea commodo consequat.</h5>
+
                     </div>
                 </div>
-            </div>
-        </section>
+
+            </section>
+            <!--Section: Content-->
+        </div>
 
         <!--Section: Cascading panels -->
         <section class="text-center py-5">

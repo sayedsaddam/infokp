@@ -12,7 +12,19 @@ class Home extends CI_Controller{
         $data['content'] = 'infokp';
         $this->load->view('components/template', $data);
     }
+    // Profile page
+    public function profile(){
+        // $data['title'] = 'Profile | InfoKP Solutions';
+        // $data['content'] = 'profile';
+        $this->load->view('profile');
+    }
     public function home_page(){
         $this->load->view('homepage');
+    }
+    public function landing_page(){
+        $this->load->view('landing-page');
+    }
+    public function agency_page(){
+        $this->load->view('agency-page');
     }
 }

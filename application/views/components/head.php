@@ -30,7 +30,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark default-color fixed-top scrolling-navbar">
             <div class="container">
-                <a class="navbar-brand" href="#">InfoKP Solutions</a>
+                <a class="navbar-brand" href="#"><img src="<?= base_url('assets/img/s2slogo.png'); ?>" alt="s2s-mark-logo" class="img-fluid" width="170"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,20 +38,16 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto smooth-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url(); ?>">Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#about" data-offset="90">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects" data-offset="90">Projects</a>
+                            <a class="nav-link" href="#projects" data-offset="90">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#articles" data-offset="90">Articles</a>
+                            <a class="nav-link" href="#articles" data-offset="90">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-offset="90">Contact</a>
+                            <a class="nav-link" href="#contact" data-offset="90">Articles</a>
                         </li>
                     </ul>
                     <!-- Social Icon  -->
@@ -89,11 +85,11 @@
                     <!--Grid row-->
                     <div class="row wow fadeIn">
                         <!--Grid column-->
-                        <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
-                            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">InfoKP Solutions</h3>
-                            <hr class="hr-light my-4 w-75">
-                            <h4 class="subtext-header mt-2 mb-4">A leading software and web applications providers.</h4>
-                            <a href="#contact" class="btn btn-rounded btn-outline-white">
+                        <div class="col-md-12 mb-4 white-text wow fadeIn">
+                            <h3 class="display-3 white-text mb-0 pt-md-5 pt-5 font-italic">We grow <span class="font-weight-bold">BRANDS</span></h3>
+                            <!-- <hr class="hr-light my-4 w-75"> -->
+                            <h4 class="subtext-header mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.</h4>
+                            <a href="#contact" class="btn btn-rounded btn-primary" style="border-radius: 50px;">
                                 <i class="fa fa-home"></i> Reach Out to Us
                             </a>
                         </div>

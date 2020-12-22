@@ -52,7 +52,7 @@
                 <!--First column-->
                 <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
                     <h6 class="text-uppercase font-weight-bold">
-                        <strong>S2S Marketing</strong>
+                        <img src="<?= base_url('assets/img/s2slogo.png'); ?>" alt="s2s-mark-logo" class="img-fluid" width="200">
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
@@ -108,7 +108,7 @@
                         <strong>Contact</strong>
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p><i class="fas fa-home"></i></i> Office #11, 2<sup>nd</sup> floor, Umer blg, Jinnah &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ave, Blue Area, Islamabad, Pakistan.</p>
+                    <p><i class="fas fa-home"></i></i> Office # 11, 2<sup>nd</sup> floor, Umer blg, Jinnah &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ave, Blue Area, Islamabad, Pakistan.</p>
                     <p><i class="fa fa-envelope mr-3"></i> info@es2smark.com</p>
                     <p><i class="fa fa-mobile mr-3"></i> + 92 333 222 2259</p>
                     <p><i class="fa fa-phone mr-3"></i> +92 51 111 678 678</p>
