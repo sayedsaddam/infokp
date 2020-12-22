@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>InfoKP Solutiions</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -52,7 +52,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar">
       <div class="container">
-        <a class="navbar-brand font-weight-bold title" href="#">Brand</a>
+        <a class="navbar-brand font-weight-bold title" href="#">InfoKP</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -569,12 +569,12 @@
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="card card-body">
               <div class="avatar mx-auto mt-3 mb-3">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(25).jpg" class="rounded-circle"
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" class="rounded-circle"
                   alt="First sample avatar image">
               </div>
-              <h6 class="font-weight-bold title">Anna Deynah</h6>
+              <h6 class="font-weight-bold title">Abdul Rab</h6>
 
-              <p class="font-small grey-text">Graphic designer</p>
+              <p class="font-small grey-text">Founder & CEO</p>
 
               <ul class="list-unstyled">
                 <!-- Facebook -->
@@ -601,9 +601,9 @@
                 <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="rounded-circle"
                   alt="First sample avatar image">
               </div>
-              <h6 class="font-weight-bold title">John Doe</h6>
+              <h6 class="font-weight-bold title">Saddam Hussain</h6>
 
-              <p class="font-small grey-text">Web developer</p>
+              <p class="font-small grey-text">Lead Software Developer</p>
 
               <ul class="list-unstyled">
                 <!-- Facebook -->
@@ -623,12 +623,12 @@
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="card card-body">
               <div class="avatar mx-auto mt-3 mb-3">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(5).jpg" class="rounded-circle"
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle"
                   alt="First sample avatar image">
               </div>
-              <h6 class="font-weight-bold title">Maria Smith</h6>
+              <h6 class="font-weight-bold title">Zeeshan Khan</h6>
 
-              <p class="font-small grey-text">Photographer</p>
+              <p class="font-small grey-text">Web Developer</p>
 
               <ul class="list-unstyled">
                 <!-- Facebook -->
@@ -655,9 +655,9 @@
                 <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle"
                   alt="First sample avatar image">
               </div>
-              <h6 class="font-weight-bold title">Tom Adams</h6>
+              <h6 class="font-weight-bold title">Hikmat Yar</h6>
 
-              <p class="font-small grey-text">Backend developer</p>
+              <p class="font-small grey-text">Internee</p>
 
               <ul class="list-unstyled">
                 <!-- Facebook -->
