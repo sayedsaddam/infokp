@@ -255,7 +255,7 @@ header,
                 
                 <h3 class="font-weight-bold pt-4 mb-4">Who We Are</h3>
                 
-                <h5 class="font-italic mb-5">...we are InfoKP, a Khyber Pakhtunkhwa based Software solutions providers.</h5>
+                <h5 class="font-italic mb-5 font-weight-lighter">...we are <span class="deep-purple-text font-weight-bolder">InfoKP</span>, a Khyber Pakhtunkhwa based Software solutions providers.</h5>
 
                 <div class="row mx-lg-5 mx-md-3">
                     <div class="col-md-6 mb-4">
