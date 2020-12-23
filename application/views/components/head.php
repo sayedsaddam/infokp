@@ -89,7 +89,7 @@
                             <h3 class="display-3 white-text mb-0 pt-md-5 pt-5 font-italic">We grow <span class="font-weight-bold">BRANDS</span></h3>
                             <!-- <hr class="hr-light my-4 w-75"> -->
                             <h4 class="subtext-header mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.</h4>
-                            <a href="#contact" class="btn btn-rounded btn-primary" style="border-radius: 50px;">
+                            <a href="#contact" class="btn btn-rounded btn-light" style="border-radius: 50px;">
                                 <i class="fa fa-home"></i> Reach Out to Us
                             </a>
                         </div>

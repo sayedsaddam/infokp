@@ -27,4 +27,7 @@ class Home extends CI_Controller{
     public function agency_page(){
         $this->load->view('agency-page');
     }
+    public function resume(){
+        $this->load->view('resume');
+    }
 }
