@@ -42,7 +42,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Saddam</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -87,7 +87,7 @@
                     <div class="row smooth-scroll">
                         <div class="col-md-12 pt-3">
                             <div class="white-text text-center pt-5">
-                                <h1 class="display-2 mb-4 dark-grey-text wow fadeIn">I am <strong>Saddam Hussain</strong></h1>
+                                <h1 class="display-2 mb-4 dark-grey-text wow fadeIn">I am <strong>Saddam Hussain</strong> <span class="counter">Sayed</span></h1>
                                 <h5 class="text-uppercase font-weight-bold wow fadeIn" data-wow-delay="0.4s"><mark>Web developer & designer</mark></h5>
                                 <a href="#about" class="btn btn-floating btn-large wow fadeIn" data-wow-delay="0.4s" data-offset="100"><i class="fas fa-angle-down" aria-hidden="true"></i></a>
                             </div>
@@ -189,7 +189,7 @@
                                 <!--Description-->
                                 <blockquote class="blockquote bq-warning mb-4">
                                     <div class="row"> <i class="fas fa-briefcase fa-x mb-1 mr-3 ml-3" aria-hidden="true"></i>
-                                        <h5 class="font-weight-bold mb-3">Software Developer</h5>
+                                        <h5 class="font-weight-bold mb-3">Software Developer <span class="badge badge-success">Current</span></h5>
                                     </div>
                                     <p class="font-weight-bold ml-1 dark-grey-text mb-2">Feb, 2020 - Present</p>
                                     <p class="mb-0 ml-1 light-grey-text">Al Hayyat Group of Companies, Islamabad, Pakistan.</p>
@@ -197,28 +197,28 @@
 
                                 <blockquote class="blockquote bq-warning mt-1 mb-4">
                                     <div class="row"> <i class="fas fa-briefcase fa-x mb-1 mr-3 ml-3" aria-hidden="true"></i>
-                                        <h5 class="font-weight-bold mb-3">Software Developer</h5> </div>
+                                        <h5 class="font-weight-bold mb-3">Software Developer <span class="badge badge-info">11 Mos</span></h5> </div>
                                     <p class="font-weight-bold ml-1 dark-grey-text mb-2">March, 2019 - Jan, 2020</p>
                                     <p class="mb-0 ml-1 light-grey-text">CHIP Trainig and Consulting(Pvt) Ltd. Islamabad, Pakistan.</p>
                                 </blockquote>
 
                                 <blockquote class="blockquote bq-warning">
                                     <div class="row"> <i class="fas fa-briefcase fa-x mb-1 mr-3 ml-3" aria-hidden="true"></i>
-                                        <h5 class="font-weight-bold mb-3">Web Developer</h5> </div>
+                                        <h5 class="font-weight-bold mb-3">Web Developer <span class="badge badge-info">1 Year</span></h5> </div>
                                     <p class="font-weight-bold ml-1 dark-grey-text mb-2"><strong>Aug, 2017 - Jul, 2018</strong></p>
                                     <p class="mb-0 ml-1 light-grey-text">VIVE Technologies (Pvt) Ltd. Peshawar, Pakistan.</p>
                                 </blockquote>
 
                                 <blockquote class="blockquote bq-warning">
                                     <div class="row"> <i class="fas fa-briefcase fa-x mb-1 mr-3 ml-3" aria-hidden="true"></i>
-                                        <h5 class="font-weight-bold mb-3">Web Developer</h5> </div>
+                                        <h5 class="font-weight-bold mb-3">Web Developer <span class="badge badge-info">1 Mo</span></h5> </div>
                                     <p class="font-weight-bold ml-1 dark-grey-text mb-2"><strong>Jul, 2017 - Aug, 2017</strong></p>
                                     <p class="mb-0 ml-1 light-grey-text">mindGigs Technologies (Pvt) Ltd. Peshawar, Pakistan.</p>
                                 </blockquote>
 
                                 <blockquote class="blockquote bq-warning">
                                     <div class="row"> <i class="fas fa-briefcase fa-x mb-1 mr-3 ml-3" aria-hidden="true"></i>
-                                        <h5 class="font-weight-bold mb-3">Web Developer (Internee)</h5> </div>
+                                        <h5 class="font-weight-bold mb-3">Web Developer (Internee) <span class="badge badge-info">7 Mos</span></h5> </div>
                                     <p class="font-weight-bold ml-1 dark-grey-text mb-2"><strong>Dec, 2016 - Jul, 2017</strong></p>
                                     <p class="mb-0 ml-1 light-grey-text">Innovision Technologies Inc. (Pvt) Ltd. Peshawar, Pakistan.</p>
                                 </blockquote>
@@ -250,7 +250,7 @@
                                     <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
 
-                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">Bootstrap 3, 4 Material Design Bootstrap.</p>
+                            <p class="black-text text-uppercase font-weight-bold pt-3" align="justify">Bootstrap 3, 4 Material Design (MDB5).</p>
                                 <div class="md-progress">
                                     <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
