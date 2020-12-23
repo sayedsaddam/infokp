@@ -67,13 +67,13 @@
                     <!-- Social Icon  -->
                     <ul class="navbar-nav nav-flex-icons">
                         <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-facebook-f light-green-text-2"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/saddam.sayed.9" class="nav-link"><i class="fab fa-facebook-f light-green-text-2"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-twitter light-green-text-2"></i></a>
+                            <a target="_blank" href="https://www.twitter.com/hsaddam355" class="nav-link"><i class="fab fa-twitter light-green-text-2"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-instagram light-green-text-2"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/iamsayedsaddam" class="nav-link"><i class="fab fa-instagram light-green-text-2"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -520,8 +520,8 @@
                                 </div>
                             </div>
                             <!--/.Third row-->
+                            <div class="text-center text-md-right mt-4"> <a class="btn btn-dark rounded-pill">Submit</a> </div>
                         </form>
-                        <div class="text-center text-md-left mt-4"> <a class="btn btn-primary">Send</a> </div>
                     </div>
                     <!--.First column-->
 
