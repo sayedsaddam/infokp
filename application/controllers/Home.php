@@ -30,4 +30,8 @@ class Home extends CI_Controller{
     public function resume(){
         $this->load->view('resume');
     }
+    // Instagram layout by MDB Lab.
+    public function instagram(){
+        $this->load->view('mdb_instagram');
+    }
 }
