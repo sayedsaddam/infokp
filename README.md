@@ -1,2 +1,2 @@
 # InfoKP website
-This repository belongs to the our newly created company infoKP, which is a web apps providing company.
+This repository belongs to our newly created company infoKP, which is a web apps providing company.
