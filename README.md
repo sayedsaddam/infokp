@@ -1,2 +1,2 @@
 # InfoKP website
-This repository belongs to our newly created company infoKP, which is a web apps providing company.
+Modifying the purpose of the repository to a taks management system for a small business.
