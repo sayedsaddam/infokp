@@ -20,7 +20,7 @@
     <body>
         <!--Navbar -->
         <nav class="mb-0 navbar navbar-expand-lg navbar-dark default-color">
-            <a class="navbar-brand" href="#">Progressive Ventures</a>
+            <a class="navbar-brand" href="<?= base_url('admin'); ?>">Progressive Ventures</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
                 aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -111,7 +111,14 @@
                     <div class="col-4">
                         <div class="card">
                             <div class="card-header">
-                                <h5 class="card-title">Todos - My Tasks</h5>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 class="card-title">Todos - My Tasks</h5>
+                                    </div>
+                                    <div class="col-4 text-right">
+                                    <a data-toggle="modal" data-target="#add_todo" class="text-info font-weight-bold"><i class="fa fa-plus"></i> Add New</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-body">
                                 <ul class="list-group">
@@ -157,6 +164,28 @@
             </div>
         </div>
         <!-- Side Modal Top Left -->
+        <!-- Side Modal Top Right -->
+        <div class="modal fade right" id="add_todo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+            <div class="modal-dialog modal-side modal-top-right" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Add Todo</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Side Modal Top Right -->
         <script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
         <script src="<?php echo base_url('assets/js/custom.js'); ?>"></script>
         <!-- JQuery -->

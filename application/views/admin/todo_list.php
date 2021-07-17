@@ -19,8 +19,8 @@
     </head>
     <body style="background-color: #eee;">
          <!--Navbar -->
-         <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
-            <a class="navbar-brand" href="#">Progressive Ventures</a>
+         <nav class="mb-0 navbar navbar-expand-lg navbar-dark default-color">
+            <a class="navbar-brand" href="<?= base_url('admin'); ?>">Progressive Ventures</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
                 aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,81 +44,99 @@
             </div>
         </nav>
         <!--/.Navbar -->
-        <div class="container my-5 py-5">
-            <!-- Section: Block Content -->
-            <section class="">
-                <!--Grid row-->
-                <div class="row">
-                <!--Grid column-->
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <!-- Admin card -->
-                    <div class="card mt-3">
-                    <div class="">
-                        <i class="far fa-money-bill-alt fa-lg warning-color z-depth-2 p-4 ml-3 mt-n3 rounded text-white"></i>
-                        <div class="float-right text-right p-3">
-                        <p class="text-uppercase text-muted mb-1"><small>pending</small></p>
-                        <h4 class="font-weight-bold mb-0">10</h4>
+        <div class="jumbotron jumbotron-fluid aqua-gradient text-light">
+            <div class="container">
+                <h1 class="display-4">Progressive Ventures</h1>
+                <p>Activity Tracking solution - PVSol Pvt. Ltd.</p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="list-group list-group-flush z-depth-1 rounded">
+                        <div class="list-group-item active d-flex justify-content-start align-items-center py-3">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle z-depth-0" width="50" alt="avatar image">
+                            <div class="d-flex flex-column pl-3">
+                            <p class="font-weight-normal mb-0">Mark Otto</p>
+                            <p class="small mb-0">Field Officer</p>
+                            </div>
                         </div>
+                        <a href="#!" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Projects
+                            <span class="badge badge-info badge-pill">26</span>
+                        </a>
+                        <a href="#!" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Tasks
+                            <span class="badge badge-warning badge-pill">17</span>
+                        </a>
+                        <a href="#!" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Completed projects
+                            <span class="badge badge-success badge-pill">10</span>
+                        </a>
+                        <a href="#!" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Followers
+                            <span class="badge badge-danger badge-pill">728</span>
+                        </a>
                     </div>
-                    <div class="card-body pt-0">
-                        <div class="progress md-progress">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                            aria-valuemax="100"></div>
-                        </div>
-                        <p class="card-text">...</p>
-                    </div>
-                    </div>
-                    <!-- Admin card -->
                 </div>
-                <!--Grid column-->
-                <!--Grid column-->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <!-- Admin card -->
-                    <div class="card mt-3">
-                    <div class="">
-                        <i class="fas fa-chart-line fa-lg info-color z-depth-2 p-4 ml-3 mt-n3 rounded text-white"></i>
-                        <div class="float-right text-right p-3">
-                        <p class="text-uppercase text-muted mb-1"><small>in progress</small></p>
-                        <h4 class="font-weight-bold mb-0">3</h4>
+                <div class="col-8">
+                    <!-- Section: Block Content -->
+                    <section class="">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 mb-4">
+                                <div class="card mt-3">
+                                    <div class="">
+                                        <i class="far fa-money-bill-alt fa-lg warning-color z-depth-2 p-4 ml-3 mt-n3 rounded text-white"></i>
+                                        <div class="float-right text-right p-3">
+                                        <p class="text-uppercase text-muted mb-1"><small>Pending</small></p>
+                                        <h4 class="font-weight-bold mb-0">08</h4>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <div class="progress md-progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                        </div>
+                                        <p class="card-text">...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card mt-3">
+                                    <div class="">
+                                        <i class="fas fa-chart-line fa-lg info-color z-depth-2 p-4 ml-3 mt-n3 rounded text-white"></i>
+                                        <div class="float-right text-right p-3">
+                                        <p class="text-uppercase text-muted mb-1"><small>Progress</small></p>
+                                        <h4 class="font-weight-bold mb-0">05</h4>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <div class="progress md-progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                        </div>
+                                        <p class="card-text">...</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card mt-3">
+                                    <div class="">
+                                        <i class="fas fa-chart-pie fa-lg success-color z-depth-2 p-4 ml-3 mt-n3 rounded text-white"></i>
+                                        <div class="float-right text-right p-3">
+                                        <p class="text-uppercase text-muted mb-1"><small>completed</small></p>
+                                        <h4 class="font-weight-bold mb-0">04</h4>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <div class="progress md-progress">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 31%" aria-valuenow="31" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                        </div>
+                                        <p class="card-text">...</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-body pt-0">
-                        <div class="progress md-progress">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0"
-                            aria-valuemax="100"></div>
-                        </div>
-                        <p class="card-text">...</p>
-                    </div>
-                    </div>
-                    <!-- Admin card -->
+                    </section>
                 </div>
-                <!--Grid column-->
-                <!--Grid column-->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <!-- Admin card -->
-                    <div class="card mt-3">
-                    <div class="">
-                        <i class="fas fa-chart-pie fa-lg success-color z-depth-2 p-4 ml-3 mt-n3 rounded text-white"></i>
-                        <div class="float-right text-right p-3">
-                        <p class="text-uppercase text-muted mb-1"><small>completed</small></p>
-                        <h4 class="font-weight-bold mb-0">7</h4>
-                        </div>
-                    </div>
-                    <div class="card-body pt-0">
-                        <div class="progress md-progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 31%" aria-valuenow="31" aria-valuemin="0"
-                            aria-valuemax="100"></div>
-                        </div>
-                        <p class="card-text">...</p>
-                    </div>
-                    </div>
-                    <!-- Admin card -->
-                </div>
-                <!--Grid column-->
-                </div>
-                <!--Grid row-->
-            </section>
-            <!--Section: Content-->
+            </div>
         </div>
         <script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
         <script src="<?php echo base_url('assets/js/custom.js'); ?>"></script>
