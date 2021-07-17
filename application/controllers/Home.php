@@ -37,6 +37,11 @@ class Home extends CI_Controller{
     public function mail_sending(){
         $this->load->view('email_form');
     }
+    // Half video template
+    public function video_template(){
+        $data['title'] = 'Video Template';
+        $this->load->view('video_template', $data);
+    }
     // Send email function - Form action
     public function send_email(){
         $single_email = 'hsaddam355@yahoo.com';

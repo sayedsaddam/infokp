@@ -15,4 +15,9 @@ class Admin extends CI_Controller{
         $data['title'] = 'Todo List';
         $this->load->view('admin/todo_list', $data);
     }
+    // Admin dashboard.
+    public function admin_db(){
+        $data['title'] = 'Admin Dashboard';
+        $this->load->view('admin/admin_db', $data);
+    }    
 }
