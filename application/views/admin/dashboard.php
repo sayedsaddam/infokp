@@ -57,7 +57,7 @@
                 <div class="row">
                     <div class="col-8">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header elegant-color text-light">
                                 <div class="row">
                                     <div class="col-8">
                                         <h5 class="card-title">Task List - Staff</h5>
@@ -67,7 +67,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body purple-color">
                                 <table class="table table-hover table-bordered table-sm table-responsive-md btn-table">
                                     <thead>
                                         <tr>
